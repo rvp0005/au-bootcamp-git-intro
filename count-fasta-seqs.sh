@@ -1,5 +1,6 @@
 #!/bin/sh
 #Justin wants to see if his comment appears.
+Sophie is so confused!!!
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
