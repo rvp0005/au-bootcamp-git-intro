@@ -3,10 +3,7 @@
 #
 # INPUT:   Paths to one or more fasta sequence files
 #
-<<<<<<< HEAD
 #
-=======
->>>>>>> 8b3464297c9192062f208af25a3d0f94050ef62b
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
 #          final line with the total number of sequences across all files.
