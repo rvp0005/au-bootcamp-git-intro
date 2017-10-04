@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Sophie is confused.
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
