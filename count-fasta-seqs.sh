@@ -1,4 +1,5 @@
 #!/bin/sh
+#Rachel really hates this project
 #Justin wants to see if his comment appears.
 # How this script should behave:
 #
@@ -64,6 +65,10 @@
 # The first thing you need to be able to do is access the paths to the fasta
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
+
+for file in *.fa
+	do 
+	wc -l $file 
 
 echo "$@"
 
