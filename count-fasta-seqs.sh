@@ -1,11 +1,4 @@
 #!/bin/sh
-<<<<<<< HEAD
-# Justin wants to see if his comment appears.
-# Justin trying to see if his second comment appears.
-=======
-#Rachel really hates this project
->>>>>>> b16c00588f3334d31915b521976eefe954760f7b
-#Justin wants to see if his comment appears.
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
