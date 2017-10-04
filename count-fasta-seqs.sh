@@ -1,6 +1,10 @@
 #!/bin/sh
+<<<<<<< HEAD
 # Justin wants to see if his comment appears.
 # Justin trying to see if his second comment appears.
+=======
+#Rachel really hates this project
+>>>>>>> b16c00588f3334d31915b521976eefe954760f7b
 #Justin wants to see if his comment appears.
 # How this script should behave:
 #
@@ -66,6 +70,10 @@
 # The first thing you need to be able to do is access the paths to the fasta
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
+
+for file in *.fa
+	do 
+	wc -l $file 
 
 echo "$@"
 
