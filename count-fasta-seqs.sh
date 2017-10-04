@@ -1,10 +1,7 @@
 #!/bin/sh
-<<<<<<< HEAD
 # Justin wants to see if his comment appears.
 # Justin trying to see if his second comment appears.
-=======
 #Rachel really hates this project
->>>>>>> b16c00588f3334d31915b521976eefe954760f7b
 #Justin wants to see if his comment appears.
 # How this script should behave:
 #
@@ -21,12 +18,12 @@
 #
 #          >RMB3263_Cyrtodactylus_philippinicus_Negros
 #          CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
-#          
+#
 #          >CWL052_Cyrtodactylus_philippinicus_Negros
 #          CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
 #
 #          If you run this script on this fasta file, you want to get the
-#          following output:          
+#          following output:
 #
 #          $ sh count-fasta-seqs.sh example-seqs1.fasta
 #          2 example-seqs1.fasta
