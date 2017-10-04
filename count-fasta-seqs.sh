@@ -6,7 +6,6 @@
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
 #          final line with the total number of sequences across all files.
-#Trying to know how this works
 # EXAMPLE: In the same directory as this script, you should find an example
 #          fasta file named 'example-seqs1.fasta', which contains:
 #
