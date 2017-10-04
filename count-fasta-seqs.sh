@@ -1,7 +1,7 @@
 #!/bin/sh
 #Rachel really hates this project
 #Justin wants to see if his comment appears.
-Sophie is so confused!!!
+#Sophie is so confused!!!
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
@@ -67,11 +67,13 @@ Sophie is so confused!!!
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-for file in *.fa
+for file in *.fasta
 	do 
 	wc -l $file 
+	
+	echo "$@"
 
-echo "$@"
+done
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
