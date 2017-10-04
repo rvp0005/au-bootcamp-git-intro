@@ -1,7 +1,13 @@
 #!/bin/sh
+# Justin wants to see if his comment appears.
+# Justin trying to see if his second comment appears.
+#Rachel really hates this project
+#Justin wants to see if his comment appears.
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
+#
+# This is Kitty Gray trying out changes to attempt pushing and pulling
 #
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
@@ -61,6 +67,10 @@
 # The first thing you need to be able to do is access the paths to the fasta
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
+
+for file in *.fa
+	do 
+	wc -l $file 
 
 echo "$@"
 
