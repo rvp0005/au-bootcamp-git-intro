@@ -1,18 +1,12 @@
 #!/bin/sh
-# Justin wants to see if his comment appears.
-# Justin trying to see if his second comment appears.
-#Rachel really hates this project
-#Justin wants to see if his comment appears.
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
 #
-# This is Kitty Gray trying out changes to attempt pushing and pulling
 #
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
 #          final line with the total number of sequences across all files.
-#Trying to know how this works
 # EXAMPLE: In the same directory as this script, you should find an example
 #          fasta file named 'example-seqs1.fasta', which contains:
 #
