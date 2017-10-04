@@ -1,5 +1,6 @@
 #!/bin/sh
-#Justin wants to see if his comment appears.
+# Justin wants to see if his comment appears.
+# Justin trying to see if his second comment appears.
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
