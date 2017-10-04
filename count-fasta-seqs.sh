@@ -62,9 +62,10 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
+###need to figure out how to grep ">" and then count them. There are lines that aren't headers that will get counted if we do wc-l @RVP
 for file in *.fasta
 	do 
-	wc -l $file 
+	grep ">" $file | 
 	
 	echo "$@"
 
