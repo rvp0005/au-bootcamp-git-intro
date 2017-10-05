@@ -100,3 +100,9 @@ done
 #
 # ADD YOUR CODE BELOW:
 
+
+count=`grep -v ">" $@ | wc -l`
+for file in $@
+do
+echo $count
+done
