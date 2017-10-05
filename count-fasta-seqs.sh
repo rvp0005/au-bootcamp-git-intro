@@ -64,8 +64,8 @@
 ###need to figure out how to grep ">" and then count them. There are lines that aren't headers that will get counted if we do wc-l @RVP
 for file in *.fasta
 	do 
-	grep ">" $file | 
-	
+	grep ">" $file | wc -l > $file.wc.txt 
+	sum=$(expr *.wc.txt)
 	echo "$@"
 
 done
