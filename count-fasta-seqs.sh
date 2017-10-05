@@ -6,7 +6,6 @@
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
 #          final line with the total number of sequences across all files.
-#Trying to know how this works
 # EXAMPLE: In the same directory as this script, you should find an example
 #          fasta file named 'example-seqs1.fasta', which contains:
 #
@@ -58,17 +57,19 @@
 # repository on Github.
 #
 # HINTS
-# The first thing you need to be able to do is access the paths to the fasta
-# files that were 'given to' this script. The variable "$@" will be very useful
+# The first thing you need to be able to do is access the paths to the fasta# files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-for file in *.fasta
-	do 
-	wc -l $file 
-	
-	echo "$@"
 
-done
+for file in "$@"
+
+	do
+	echo $(grep -c "^>" $file) $file
+done 
+
+###	echo "$@"
+
+##done
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -99,3 +100,9 @@ done
 #
 # ADD YOUR CODE BELOW:
 
+
+#count=`grep -v ">" $@ | wc -l`
+#for file in $@
+#do
+#echo $count
+#done
