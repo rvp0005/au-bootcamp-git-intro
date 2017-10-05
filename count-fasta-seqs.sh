@@ -65,7 +65,7 @@ for file in "$@"
 
 	do
 	echo $(grep -c "^>" $file) $file
-	done 
+done 
 
 ###	echo "$@"
 
