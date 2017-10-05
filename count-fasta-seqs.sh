@@ -61,14 +61,17 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-###need to figure out how to grep ">" and then count them. There are lines that aren't headers that will get counted if we do wc-l @RVP
-for file in *.fasta
-	do 
-	grep ">" $file | wc -l > $file.wc.txt 
-	sum=$(expr *.wc.txt)
-	echo "$@"
 
-done
+for file in "$@"
+	 do
+	 grep ">" $@ | wc -l 
+	 echo "$@"
+	 done  
+
+###	grep ">" $file | wc -l 
+###	echo "$@"
+
+##done
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
