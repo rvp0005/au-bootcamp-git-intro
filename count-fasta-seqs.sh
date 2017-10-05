@@ -64,10 +64,9 @@
 for file in "$@"
 
 	do
-	echo $(grep -c "^>" $file) "$@" 
-done 
+	echo $(grep -c "^>" $file) $file
+	done 
 
-###	grep ">" $file | wc -l 
 ###	echo "$@"
 
 ##done
