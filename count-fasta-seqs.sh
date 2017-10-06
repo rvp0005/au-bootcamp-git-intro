@@ -113,6 +113,8 @@ done
 #echo $basename
 #done
 
+# num1=example-seqs1.fasta
+# num2=example-seqs2.fasta
 # sum=$(expr "$num1" + "$num2")
 # for file in $@
 # do
