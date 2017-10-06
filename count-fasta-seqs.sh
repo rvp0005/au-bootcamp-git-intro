@@ -132,4 +132,4 @@ for file in "$@"
 #count2=`grep "C" $@ | wc -l`
 #total=`grep -v ">" $@ | wc -m`
 
-#percent= `expr (($count1 + $count2)/$total)` | bc
+
