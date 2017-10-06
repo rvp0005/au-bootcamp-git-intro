@@ -102,3 +102,30 @@ done
 #
 # ADD YOUR CODE BELOW:
 
+
+#count=`grep -v ">" $@ | wc -l`
+#for file in $@
+#do
+#echo $count
+#done
+
+#basename=`basename -s .fasta $@`
+#for file in $@
+#do
+#echo $basename
+#done
+
+# num1=example-seqs1.fasta
+# num2=example-seqs2.fasta
+# sum=$(expr "$num1" + "$num2")
+# for file in $@
+# do
+# echo $sum
+# done
+
+
+count1=`grep "G" $@ | wc -l`
+count2=`grep "C" $@ | wc -l`
+total=`grep -v ">" $@ | wc -m`
+
+percent= `expr (($count1 + $count2)/$total)` | bc
