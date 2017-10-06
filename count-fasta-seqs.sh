@@ -112,14 +112,14 @@ for file in "$@"
 #for file in $@
 #do
 #echo $count
-#done
+$done
 
 #Should the line below this say basename=`basename -s ~/au-bootcamp-git-into/*.fasta $@`  ?
 #basename=`basename -s .fasta $@`
 #for file in $@
 #do
-#echo $basename
-#done
+echo $basename
+done
 
 # num1=example-seqs1.fasta
 # num2=example-seqs2.fasta
@@ -138,3 +138,5 @@ for file in "$@"
 #echo "scale=2; $GCcount/$total" | bc
 #(($count1/$total + $count2/$total)) | bc
 
+
+#expr (GCcount1 + GCcount2)
