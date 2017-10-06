@@ -118,3 +118,10 @@ done
 # do
 # echo $sum
 # done
+
+
+count1=`grep "G" $@ | wc -l`
+count2=`grep "C" $@ | wc -l`
+total=`grep -v ">" $@ | wc -m`
+
+percent= `expr (($count1 + $count2)/$total)` | bc
