@@ -132,5 +132,5 @@ for file in "$@"
 #count2=`grep "C" $@ | wc -l`
 #total=`grep -v ">" $@ | wc -m`
 
-(($count1/$total + $count2/$total)) | bc
+#(($count1/$total + $count2/$total)) | bc
 
