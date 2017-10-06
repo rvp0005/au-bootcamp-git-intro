@@ -67,7 +67,7 @@ done
 
 for file in "$@"
 	do
-	cat $@ |  grep -c "^>"
+	cat *.fasta |  grep -c "^>"
 	done
 
 
@@ -107,11 +107,6 @@ for file in "$@"
 # ADD YOUR CODE BELOW:
 
 
-#count=`grep -v ">" $@ | wc -l`
-#for file in $@
-#do
-#echo $count
-#done
 
 #basename=`basename -s .fasta $@`
 #for file in $@
@@ -128,11 +123,5 @@ for file in "$@"
 # done
 
 
-#count1=`grep "G" $@ | wc -l`
-#count2=`grep "C" $@ | wc -l`
-#total=`grep -v ">" $@ | wc -c`
 
-#GCcount=`expr $count1 + $count2`
-#echo "scale=2; $GCcount/$total" | bc
-#(($count1/$total + $count2/$total)) | bc
 
