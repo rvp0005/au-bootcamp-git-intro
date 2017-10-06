@@ -3,6 +3,7 @@
 #
 # INPUT:   Paths to one or more fasta sequence files
 #
+#
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
 #          final line with the total number of sequences across all files.
@@ -11,12 +12,12 @@
 #
 #          >RMB3263_Cyrtodactylus_philippinicus_Negros
 #          CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
-#          
+#
 #          >CWL052_Cyrtodactylus_philippinicus_Negros
 #          CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
 #
 #          If you run this script on this fasta file, you want to get the
-#          following output:          
+#          following output:
 #
 #          $ sh count-fasta-seqs.sh example-seqs1.fasta
 #          2 example-seqs1.fasta
@@ -64,7 +65,8 @@ for file in "$@"
 	do
 	echo $(grep -c "^>" $file) $file
 done 
-
+echo
+echo basename $@
 for file in "$@"
 	do
 	cat *.fasta |  grep -c "^>"
@@ -107,21 +109,29 @@ for file in "$@"
 # ADD YOUR CODE BELOW:
 
 
+#count=`grep -v ">" $@ | wc -l`
+#for file in $@
+#do
+#echo $count
+#$done
 
+#Should the line below this look something like this basename=`basename -s ~/au-bootcamp-git-into/*.fasta $@`?
 #basename=`basename -s .fasta $@`
 #for file in $@
 #do
 #echo $basename
 #done
 
-# num1=example-seqs1.fasta
-# num2=example-seqs2.fasta
-# sum=$(expr "$num1" + "$num2")
-# for file in $@
-# do
-# echo $sum
-# done
+#num1=example-seqs1.fasta
+#num2=example-seqs2.fasta
+#sum=$(expr "$num1" + "$num2")
+#for file in $@
+#do
+#echo $sum
+#done
 
 
 
 
+
+#expr (GCcount1 + GCcount2)
