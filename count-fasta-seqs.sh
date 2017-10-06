@@ -106,3 +106,15 @@ done
 #do
 #echo $count
 #done
+
+#basename=`basename -s .fasta $@`
+#for file in $@
+#do
+#echo $basename
+#done
+
+# sum=$(expr "$num1" + "$num2")
+# for file in $@
+# do
+# echo $sum
+# done
