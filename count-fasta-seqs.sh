@@ -58,18 +58,25 @@
 # repository on Github.
 #
 # HINTS
-# The first thing you need to be able to do is access the paths to the fasta
-# files that were 'given to' this script. The variable "$@" will be very useful
+# The first thing you need to be able to do is access the paths to the fasta# files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-###need to figure out how to grep ">" and then count them. There are lines that aren't headers that will get counted if we do wc-l @RVP
-for file in *.fasta
-	do 
-	grep ">" $file | 
-	
-	echo "$@"
+for file in "$@"
+	do
+	echo $(grep -c "^>" $file) $file
+done 
 
-done
+for file in "$@"
+	do
+	cat *.fasta |  grep -c "^>"
+	done
+
+
+
+
+###	echo "$@"
+
+##done
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -99,4 +106,34 @@ done
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
+
+
+#count=`grep -v ">" $@ | wc -l`
+#for file in $@
+#do
+#echo $count
+#done
+
+#basename=`basename -s .fasta $@`
+#for file in $@
+#do
+#echo $basename
+#done
+
+# num1=example-seqs1.fasta
+# num2=example-seqs2.fasta
+# sum=$(expr "$num1" + "$num2")
+# for file in $@
+# do
+# echo $sum
+# done
+
+
+#count1=`grep "G" $@ | wc -l`
+#count2=`grep "C" $@ | wc -l`
+#total=`grep -v ">" $@ | wc -c`
+
+#GCcount=`expr $count1 + $count2`
+#echo "scale=2; $GCcount/$total" | bc
+#(($count1/$total + $count2/$total)) | bc
 
