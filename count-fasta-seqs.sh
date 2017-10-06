@@ -62,10 +62,12 @@
 
 
 for file in "$@"
-
 	do
 	echo $(grep -c "^>" $file) $file
+	grep -c "^>" $file > wc.$file.txt
+	expr'2 + 3'
 done 
+ 
 
 ###	echo "$@"
 
