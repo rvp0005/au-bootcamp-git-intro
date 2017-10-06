@@ -63,10 +63,10 @@
 
 for file in "$@"
 	do
-	echo $(grep -c "^>" $file) $file
+	echo $(grep -c -v "^>" $file)
 done 
 echo
-basename -s $@
+basename -a $@
 for file in "$@"
 	do
 	cat ~/au-bootcamp-git-intro/example-seqs1.fasta ~/au-bootcamp-git-intro/example-seqs2.fasta |  grep -c "^>"
