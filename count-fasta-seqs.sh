@@ -60,14 +60,18 @@
 # The first thing you need to be able to do is access the paths to the fasta# files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-
 for file in "$@"
 	do
 	echo $(grep -c "^>" $file) $file
-	grep -c "^>" $file > wc.$file.txt
-	expr'2 + 3'
 done 
- 
+
+for file in "$@"
+	do
+	cat *.fasta |  grep -c "^>"
+	done
+
+
+
 
 ###	echo "$@"
 
@@ -124,8 +128,8 @@ done
 # done
 
 
-count1=`grep "G" $@ | wc -l`
-count2=`grep "C" $@ | wc -l`
-total=`grep -v ">" $@ | wc -m`
+#count1=`grep "G" $@ | wc -l`
+#count2=`grep "C" $@ | wc -l`
+#total=`grep -v ">" $@ | wc -m`
 
-percent= `expr (($count1 + $count2)/$total)` | bc
+#percent= `expr (($count1 + $count2)/$total)` | bc
