@@ -65,7 +65,8 @@ for file in "$@"
 	do
 	echo $(grep -c "^>" $file) $file
 done 
-
+echo
+echo basename $@
 for file in "$@"
 	do
 	cat *.fasta |  grep -c "^>"
