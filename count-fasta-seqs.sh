@@ -114,6 +114,7 @@ for file in "$@"
 #echo $count
 #done
 
+#Should the line below this say basename=`basename -s ~/au-bootcamp-git-into/*.fasta $@`  ?
 #basename=`basename -s .fasta $@`
 #for file in $@
 #do
