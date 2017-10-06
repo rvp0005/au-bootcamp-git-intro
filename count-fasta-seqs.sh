@@ -67,7 +67,7 @@ done
 
 for file in "$@"
 	do
-	cat *.fasta |  grep -c "^>"
+	cat $@ |  grep -c "^>"
 	done
 
 
