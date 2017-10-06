@@ -126,5 +126,5 @@ count1=`grep "G" $@ | wc -l`
 count2=`grep "C" $@ | wc -l`
 total=`grep -v ">" $@ | wc -m`
 
-echo "$count1/$total + $count2/$total | bc"
+(($count1/$total + $count2/$total)) | bc
 
