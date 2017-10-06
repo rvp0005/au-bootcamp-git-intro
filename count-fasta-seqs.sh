@@ -112,22 +112,22 @@ for file in "$@"
 #for file in $@
 #do
 #echo $count
-$done
+#$done
 
-#Should the line below this say basename=`basename -s ~/au-bootcamp-git-into/*.fasta $@`  ?
+#Should the line below this look something like this basename=`basename -s ~/au-bootcamp-git-into/*.fasta $@`?
 #basename=`basename -s .fasta $@`
 #for file in $@
 #do
-echo $basename
-done
+#echo $basename
+#done
 
-# num1=example-seqs1.fasta
-# num2=example-seqs2.fasta
-# sum=$(expr "$num1" + "$num2")
-# for file in $@
-# do
-# echo $sum
-# done
+#num1=example-seqs1.fasta
+#num2=example-seqs2.fasta
+#sum=$(expr "$num1" + "$num2")
+#for file in $@
+#do
+#echo $sum
+#done
 
 
 #count1=`grep "G" $@ | wc -l`
