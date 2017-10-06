@@ -126,4 +126,5 @@ count1=`grep "G" $@ | wc -l`
 count2=`grep "C" $@ | wc -l`
 total=`grep -v ">" $@ | wc -m`
 
-percent= `echo "scale =2 ;($count1 + $count2)/$total) | bc`
+echo "expr $count1/$total + $count2/$total | bc"
+
