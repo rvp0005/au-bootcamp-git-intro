@@ -61,23 +61,6 @@
 # The first thing you need to be able to do is access the paths to the fasta# files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-for file in "$@"
-	do
-	echo $(grep -c -v "^>" $file)
-done 
-echo
-basename -a $@
-for file in "$@"
-	do
-	cat ~/au-bootcamp-git-intro/example-seqs1.fasta ~/au-bootcamp-git-intro/example-seqs2.fasta |  grep -c "^>"
-	done
-
-
-
-
-###	echo "$@"
-
-##done
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -109,29 +92,14 @@ for file in "$@"
 # ADD YOUR CODE BELOW:
 
 
-#count=`grep -v ">" $@ | wc -l`
-#for file in $@
-#do
-#echo $count
-#$done
 
-#Should the line below this look something like this basename=`basename -s ~/au-bootcamp-git-into/*.fasta $@`?
-#basename=`basename -s .fasta $@`
-#for file in $@
-#do
-#echo $basename
-#done
-
-#num1=example-seqs1.fasta
-#num2=example-seqs2.fasta
-#sum=$(expr "$num1" + "$num2")
-#for file in $@
-#do
-#echo $sum
-#done
+for file in "$@"
+        do
+        echo $(grep -c -v "^>" $file) $file
+done
+for file in "$@"
+        do
+        cat *.fasta |  grep -c "^>"
+        done
 
 
-
-
-
-#expr (GCcount1 + GCcount2)
